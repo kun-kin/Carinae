@@ -1,0 +1,189 @@
+@font-face {
+    font-family: 'Georgia', sans-serif;
+    src: url('../font/Georgia.ttf');
+}
+
+@font-face {
+    font-family: 'Arial', serif;
+    src: url('../font/Arial-regular.ttf');
+}
+
+@font-face {
+    font-family: 'Myrial Pro';
+    src: url('../font/MYRIADPRO-REGULAR.OTF');
+}
+
+@import 'header';
+@import 'main';
+@import 'footer';
+@import 'rooms';
+:root {
+    --primary-color: #414141;
+    --grey-color: #595959;
+    --green-color: #136337;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font: inherit;
+}
+
+img,
+picture,
+svg,
+video {
+    display: block;
+    max-width: 100%;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+html {
+    font-size: 10px;
+    font-family: 'Arial', serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    display: block;
+    color: var(--primary-color);
+    font-size: 1.5rem;
+    letter-spacing: .02rem;
+}
+
+.ov-hidden {
+    overflow: hidden;
+}
+
+.container {
+    max-width: 1300px;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+    font-family: 'Georgia', sans-serif;
+    margin-bottom: 0;
+}
+
+.btn {
+    background-color: var(--grey-color);
+    padding: 10px;
+    color: #fff;
+}
+
+.btn-wrap {
+    position: relative;
+    text-decoration: none;
+    color: var(--green-color);
+    text-transform: uppercase;
+    font-family: 'Georgia', sans-serif;
+    &::after {
+        position: absolute;
+        bottom: -1rem;
+        left: 0;
+        width: 4rem;
+        height: 2px;
+        background-color: var(--green-color);
+        content: '';
+        z-index: 1;
+        transition: all .3s ease-in-out;
+    }
+    &:hover {
+        color: var(--green-color);
+        text-decoration: none;
+        &::after {
+            width: 0;
+            transition: all .3s ease-in-out;
+        }
+    }
+}
+
+.slick-prev {
+    &::before {
+        content: '';
+        font-family: fontawesome;
+    }
+}
+
+.slick-next {
+    &::before {
+        content: '';
+        font-family: fontawesome;
+    }
+}
+
+.slick-dotted.slick-slider {
+    margin-bottom: 0;
+}
+
+.slick-dots {
+    li {
+        button {
+            &::before {
+                font-size: 10px;
+            }
+        }
+    }
+}
+
+.breadcrumb {
+    background-color: transparent;
+    padding: 2rem;
+    margin: 0;
+    &-list {
+        display: flex;
+        align-items: center;
+        margin: 0;
+    }
+    &-item {
+        a {
+            color: #136337;
+            font-family: 'Georgia', sans-serif;
+        }
+    }
+    &>.container {
+        @media(max-width: 768px) {
+            padding: 0;
+        }
+    }
+}
+
+.header-module {
+    position: relative;
+    display: block;
+    text-align: center;
+    padding-bottom: 3rem;
+    .sectitle {
+        font-size: 4rem;
+        line-height: 1.2;
+        margin-bottom: 2rem;
+        @media(max-width: 576px) {
+            font-size: 2rem;
+        }
+    }
+    @media(max-width: 576px) {
+        padding-bottom: 0;
+    }
+}
