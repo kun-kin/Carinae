@@ -65,6 +65,8 @@ $(document).ready(function() {
     });
 
 
+    $('#check-in').datepicker();
+    $('#check-out').datepicker();
     $("#check-in").flatpickr({
         dateFormat: "d/m/Y"
     });
@@ -72,9 +74,9 @@ $(document).ready(function() {
         dateFormat: "d/m/Y"
     });
 
-    $(".search-availability .box-img").click(function() {
-        $(this).parents('.search-availability').toggleClass('open-active');
-    });
+    // $(".search-availability .box-img").click(function() {
+    //     $(this).parents('.search-availability').toggleClass('open-active');
+    // });
 
     $(".btn-opennav").click(function() {
         $('.nav-menu').addClass('active-nav');

@@ -2,7 +2,7 @@
     position: relative;
     display: block;
     background-color: var(--green-color);
-    color: #fff;
+    color: #f7f5d6;
     a {
         color: currentColor;
     }
@@ -33,7 +33,7 @@
             flex-direction: row-reverse;
             margin-bottom: 2rem;
             padding-bottom: 2rem;
-            border-bottom: 2px solid #fff;
+            border-bottom: 2px solid #f7f5d6;
             .footer-logo-hide {
                 display: none;
                 margin-bottom: 2rem;
@@ -46,6 +46,7 @@
             }
             .footer-info {
                 p {
+                    color: #dee3c3;
                     &:last-of-type {
                         margin-bottom: 0;
                     }
@@ -63,7 +64,7 @@
                         display: flex;
                         align-items: center;
                         justify-content: center;
-                        border: 1px solid #fff;
+                        border: 1px solid #f7f5d6;
                         border-radius: 50%;
                         img {
                             max-width: 50%;

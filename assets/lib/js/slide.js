@@ -135,6 +135,7 @@ $('.overview-list').slick({
             breakpoint: 1024,
             settings: {
                 slidesToShow: 4,
+                dots: false,
             },
         },
         {
@@ -171,6 +172,7 @@ $('.offers-list').slick({
             breakpoint: 1024,
             settings: {
                 slidesToShow: 4,
+                dots: false,
             },
         },
         {
